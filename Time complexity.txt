@@ -1,0 +1,33 @@
+## APNA COLLEGE ##
+                         TIME COMPLEXITY
+=> Amount of time taken by the algorithm as function of input size.
+# No need to worry about theory.
+# Not equal to actual time take.
+# A function. 
+# Big O is most important and generally asked.
+# In big O we consider the biggest term i.e. removing smaller terms and constants in the function.
+# Common complexities O(1), O(n), O(n^2){Nested loops or matrix travel},
+  O(logn){Binary search}, O(nlogn){Sorting}, O(2^n){Brute force Recursion: base^n, 
+  So use Dynamic programming to beat it.}, O(n!){P&C}.
+# Problem solving: 1s = 10^8 operations generally 1s is the time limit.
+# Ammortized time complexity == Average time complexity.
+# Way to calculate time complexity for recursion algorithms: 1. Recursion relation
+                                                             2. Total number of recursion calls * Work/recursion call (Common sense based)
+
+                        SPACE COMPLEXITY
+=> Amount of space taken by the algorithm as function of input size.
+# Types of space in the algorithm : 1. Input space  2. Auxilliary space(Extra space).
+# Auxilliary space is considered for space complexity.
+# Generally Time complexity is more important than the Space complexity.
+# Space complexity for recursion: 1. Call stack are formed
+                                  2. Space complexity = Auxilliary + Call stack/ Depth of tree * memory in each case/ Height of the call stack * memory in each case.
+
+
+                        Practical usage
+1. If n>=10^8 then O(logn), O(1).
+2. If n<=10^8 then O(n).
+3. If n<=10^6 then O(nlogn). {Sorting?}
+4. If n<=10^4 then O(n^2).
+5. If n<=500 then O(n^3).
+6. If n<=25 then O(2^n).
+7. If n<=12 then O(n!).
