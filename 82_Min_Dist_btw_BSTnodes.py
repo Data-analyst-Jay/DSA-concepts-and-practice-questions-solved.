@@ -5,7 +5,8 @@ class TreeNode:
         self.left = left
         self.right = right
 class Solution:
-    prev = None
+    def __init__(self):
+        self.prev = None
     def minDiffInBST(self, root):
         ans = float('inf')
         if not root:
