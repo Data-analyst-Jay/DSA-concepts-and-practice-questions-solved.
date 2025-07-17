@@ -32,4 +32,4 @@ class Solution:
                 if temp is not None:
                     temp.next = curr
             temp = curr
-            
+        return root
