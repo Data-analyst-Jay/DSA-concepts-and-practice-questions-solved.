@@ -33,3 +33,21 @@ def DNFA(arr):
 l = [0,0,1,1,2,2]
 ans = DNFA(l)
 print(ans)
+
+# My way
+def sort_arr(arr):
+    z, o, t = 0, 0, 0
+    for i in arr:
+        if i==0:
+            z += 1
+        elif i==1:
+            o += 1
+        else:
+            t += 1
+    for i in range(z):
+            arr[i] = 0
+    for j in range(o):
+        arr[j+z] = 1
+    for k in range(t):
+        arr[k+z+o] = 2
+    return arr
