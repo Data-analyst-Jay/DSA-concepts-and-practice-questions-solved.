@@ -22,6 +22,6 @@ def remove_occu(s,part):
         s = s.replace(part,'')
     return s
 
-str = "aabababa"
-s = remove_occu(str,'aba')
+str = "ab"
+s = remove_occu(str,'ab')
 print(s)
