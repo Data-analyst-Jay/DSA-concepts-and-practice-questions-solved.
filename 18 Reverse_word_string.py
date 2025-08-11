@@ -21,3 +21,14 @@ def reverseWords(str):
 
 ans = reverseWords('Jay Gehlot')
 print(ans)
+
+# My Way
+def rev_str(str):
+    i, j = 0, len(str)-1
+    while i < j:
+        str[i], str[j] = str[j], str[i]
+        i += 1
+        j -= 1
+    return str
+
+print(rev_str(['j', 'a', 'y', 'g', 'e', 'h', 'l', 'o', 't'])) 
