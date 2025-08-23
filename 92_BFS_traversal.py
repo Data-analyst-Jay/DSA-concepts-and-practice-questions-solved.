@@ -16,7 +16,7 @@ class graph:
                 print(f'-> {self.graph[i][j]}', end=' ')
             print('\n')
     
-    def BFS(self, start):
+    def BFS(self, start):                                          #TC=O(V+E), SC=O(V)
         visited = [False] * self.vertices
         qu = []
         qu.append(start)
