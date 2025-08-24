@@ -34,6 +34,7 @@ def rep_mis(arr):
     l = len(arr)
     set = []
     ans = []
+    exp_sum = ((l**2)*(l**2 + 1))/2
     actual_sum = 0
     for i in arr:
         for j in i:
@@ -41,7 +42,6 @@ def rep_mis(arr):
                 ans.append(j)
             set.append(j)
             actual_sum += j
-    exp_sum = ((l**2)*(l**2 + 1))/2
     b = exp_sum + ans[0] - actual_sum
     ans.append(b)
     return ans
