@@ -1,3 +1,5 @@
+# Keep going to all unvisited neighbors at the present depth prior to moving on to nodes at the next depth level.
+
 class graph:
     def __init__(self, vertices):
         self.vertices = vertices
