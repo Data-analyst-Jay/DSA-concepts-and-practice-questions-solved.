@@ -23,11 +23,10 @@ class graph:
 
 
     def dfs(self):
-        start = 0
         vis = [False] * self.vertices
         for i in range(self.vertices):
             if not vis[i]:
-                self._dfs_util(start, vis)
+                self._dfs_util(0, vis)
 
 g = graph(4)
 g.add_edge(0,1)
