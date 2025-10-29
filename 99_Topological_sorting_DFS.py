@@ -32,4 +32,4 @@ g.add_edge(4,1)
 g.add_edge(2,3)
 g.add_edge(3,1)
 
-print(topological_sorting(g.graph))
+print(topological_sorting(g))
